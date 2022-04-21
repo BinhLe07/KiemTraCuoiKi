@@ -109,7 +109,6 @@ public class HangHoaTestDrive {
                     dSHangHoa.timHangHoaTheoMa(tim);
                     break;
                 case 6:
-                    System.out.println("==========DANH SACH HANG HOA==========");
                     dSHangHoa.inDSHangHoa();
                     break;
             }
