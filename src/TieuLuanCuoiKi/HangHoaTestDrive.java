@@ -43,13 +43,12 @@ public class HangHoaTestDrive {
         String tim;
         do {
             System.out.println("MENU");
-            System.out.println("1.In danh sach hang hoa truoc khi them hang hoa ");
+            System.out.println("1.In danh sach hang hoa truoc khi su dung cac chuc nang 2,3,4");
             System.out.println("2.Them hang hoa ");
             System.out.println("3.Xoa hang hoa ");
-            System.out.println("4.Sua hang hoa ");
-            System.out.println("5.Tim kiem hang hoa theo ID ");
-            System.out.println("6.In danh sach hang hoa sau khi them hang hoa ");
-            System.out.print("Nhap lua chon(1->6): ");
+            System.out.println("4.Tim kiem hang hoa theo ID ");
+            System.out.println("5.In danh sach hang hoa sau khi them hang hoa ");
+            System.out.print("Nhap lua chon(1->5): ");
             chon = scanner.nextInt();
             switch (chon) {
                 case 1:
@@ -95,20 +94,15 @@ public class HangHoaTestDrive {
                     System.out.println("Hang hoa can xoa");
                     dSHangHoa.xoaHangHoa(dSHangHoa.timHangHoaTheoMa(tim));
                     System.out.println("Danh sach hang hoa sau khi xoa");
-
                     dSHangHoa.inDSHangHoa();
                     break;
                 case 4:
-                    dSHangHoa.timHangHoaTheoViTri(hangSanhSu1);
-                    dSHangHoa.suaHangHoa(4, hangSanhSu1);
-                    break;
-                case 5:
                     System.out.print("Nhap ma hang hoa can tim: ");
                     scanner.nextLine();
                     tim = scanner.nextLine();
                     dSHangHoa.timHangHoaTheoMa(tim);
                     break;
-                case 6:
+                case 5:
                     dSHangHoa.inDSHangHoa();
                     break;
             }
